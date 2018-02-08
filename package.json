@@ -1,6 +1,6 @@
 {
   "name": "formidable-upload-koa",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Koa middleware based on formidable uploader",
   "main": "./lib/index.js",
   "scripts": {
@@ -27,17 +27,15 @@
   },
   "homepage": "https://github.com/PaulRosset/formidable-upload-koa#readme",
   "dependencies": {
-    "flow": "^0.2.3",
-    "flow-bin": "^0.64.0",
-    "flow-remove-types": "^1.2.3",
-    "formidable": "^1.1.1",
-    "koa-router": "^7.4.0",
-    "koa2-formidable": "^1.0.2",
-    "superagent": "^3.8.2"
+    "formidable": "^1.1.1"
   },
   "devDependencies": {
+    "flow": "^0.2.3",
+    "flow-bin": "^0.65.0",
+    "flow-remove-types": "^1.2.3",
     "jest": "^22.1.4",
     "koa": "^2.4.1",
+    "koa-router": "^7.4.0",
     "supertest": "^3.0.0"
   }
 }
