@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "ignore": ["lib/*", "./node_modules/*"],
+  "events": {
+    "restart": "yarn flow:build"
+  }
+}

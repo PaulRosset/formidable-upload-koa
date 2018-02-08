@@ -1,0 +1,43 @@
+{
+  "name": "formidable-upload-koa",
+  "version": "0.0.1",
+  "description": "Koa middleware based on formidable uploader",
+  "main": "./lib/index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/nodemon ./lib/index.js",
+    "flow:check": "./node_modules/.bin/flow check ./src/",
+    "flow:build":
+      "./node_modules/.bin/flow-remove-types ./src/ -d ./lib/ --all --pretty",
+    "test": "./node_modules/.bin/jest --coverage",
+    "test:build": "./node_modules/.bin/jest && codecov"
+  },
+  "jest": {
+    "coverageDirectory": "./test/coverage/",
+    "collectCoverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulRosset/formidable-upload-koa.git"
+  },
+  "keywords": ["koa", "upload", "formidable", "middleware"],
+  "author": "Paul Rosset <paulrosset96@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PaulRosset/formidable-upload-koa/issues"
+  },
+  "homepage": "https://github.com/PaulRosset/formidable-upload-koa#readme",
+  "dependencies": {
+    "flow": "^0.2.3",
+    "flow-bin": "^0.64.0",
+    "flow-remove-types": "^1.2.3",
+    "formidable": "^1.1.1",
+    "koa-router": "^7.4.0",
+    "koa2-formidable": "^1.0.2",
+    "superagent": "^3.8.2"
+  },
+  "devDependencies": {
+    "jest": "^22.1.4",
+    "koa": "^2.4.1",
+    "supertest": "^3.0.0"
+  }
+}
