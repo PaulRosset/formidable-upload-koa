@@ -41,7 +41,7 @@ describe("Testing Options Schema", () => {
 
   test("Testing UploaDir option", () => {
     const dir = requestSchema.body.pic.path.split("/");
-    const sliced = dir.slice(0, 6).join("/") + "/";
+    const sliced = dir.slice(0, dir.length - 1).join("/") + "/";
     expect(sliced).toEqual(options.uploadDir);
   });
 
