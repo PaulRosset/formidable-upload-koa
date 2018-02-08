@@ -9,7 +9,7 @@
     "flow:build":
       "./node_modules/.bin/flow-remove-types ./src/ -d ./lib/ --all --pretty",
     "test": "./node_modules/.bin/jest --coverage",
-    "test:build": "./node_modules/.bin/jest && codecov"
+    "test:build": "jest && codecov"
   },
   "jest": {
     "coverageDirectory": "./test/coverage/",
