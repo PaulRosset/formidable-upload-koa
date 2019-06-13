@@ -15,11 +15,12 @@ type Options = {
 module.exports = function(
   options: Options
 ): (Object, () => Promise<Object>) => Promise<Object> {
-  let form: Object = new formidable.IncomingForm();
-  for (const opt: string in options) {
-    form[opt] = options[opt];
-  }
   return async (ctx: Object, next: () => Promise<Object>): Promise<any> => {
+    let form: Object = new formidable.IncomingForm();
+      for (const opt: string in options) {
+      form[opt] = options[opt];
+    }
+  
     await new Promise((resolve: () => void, reject: (err: Object) => void) => {
       form.parse(
         (ctx.req: Object),
